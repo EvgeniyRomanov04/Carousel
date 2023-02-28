@@ -1,0 +1,84 @@
+.main-container {
+    width: 100%;
+    position: relative;
+}
+.window {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    z-index: 5;
+}
+.items {
+    height: 100%;
+    display: flex;
+}
+.item {
+    min-width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.item-1 {
+    background: red;
+}
+
+.item-2 {
+    background: green;
+}
+
+.item-3 {
+    background: yellow;
+}
+
+.btn {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    z-index: 10;
+}
+
+.btn:after {
+    position: absolute;
+    top: 5px;
+    display: block;
+    content: '';
+    height: 1px;
+    width: 11px;
+    background-color: #fff;
+    transform: rotate(-45deg);
+}
+.btn:before {
+    position: absolute;
+    bottom: 3px;
+    display: block;
+    content: '';
+    height: 1px;
+    width: 11px;
+    background-color: #fff;
+    transform: rotate(45deg);
+}
+
+.btn-right:after {
+    right: 0;
+    transform: rotate(45deg);
+}
+.btn-right:before {
+    right: 0;
+    transform: rotate(-45deg);
+}
+
+.btn-right {
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.btn-left {
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
