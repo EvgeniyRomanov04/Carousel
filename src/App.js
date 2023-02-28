@@ -4,14 +4,6 @@ import Carousel from "./components/carousel/Carousel";
 
 function App() {
 
-  const myCity = {
-    city: 'popular',
-    popular: true,
-    country: 'USA'
-  }
-
-  console.log()
-
   return (
     <div className="App">
 
